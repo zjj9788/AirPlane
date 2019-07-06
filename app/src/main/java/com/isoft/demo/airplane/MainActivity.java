@@ -1,5 +1,6 @@
 package com.isoft.demo.airplane;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -21,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
     MainFragment3 mainFragment3;
     MainFragment4 mainFragment4;
     RadioGroup rg;
-/*RadioButton rb1;
-RadioButton rb2;
-RadioButton rb3;
-RadioButton rb4;*/
+    RadioButton rb1;
+    RadioButton rb2;
+    RadioButton rb3;
+    RadioButton rb4;
+
     public void init() {
 
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
@@ -73,22 +75,42 @@ RadioButton rb4;*/
 
         viewPager = (ViewPager) findViewById(R.id.mainViewPager);
         rg = (RadioGroup) findViewById(R.id.bottomHav);
- /*       rb1= (RadioButton) findViewById(R.id.home);
-        rb2= (RadioButton) findViewById(R.id.flight);
-        rb3= (RadioButton) findViewById(R.id.info);
-        rb4= (RadioButton) findViewById(R.id.my);*/
+        rb1 = (RadioButton) findViewById(R.id.home);
+        rb2 = (RadioButton) findViewById(R.id.flight);
+        rb3 = (RadioButton) findViewById(R.id.info);
+        rb4 = (RadioButton) findViewById(R.id.my);
         init();
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(checkedId==R.id.home)
+                if (checkedId == R.id.home) {
                     viewPager.setCurrentItem(0);
-                if(checkedId==R.id.flight)
+                    rb1.setTextColor(Color.RED);
+                    rb2.setTextColor(Color.BLACK);
+                    rb3.setTextColor(Color.BLACK);
+                    rb4.setTextColor(Color.BLACK);
+                }
+                if (checkedId == R.id.flight) {
+                    rb1.setTextColor(Color.BLACK);
+                    rb2.setTextColor(Color.RED);
+                    rb3.setTextColor(Color.BLACK);
+                    rb4.setTextColor(Color.BLACK);
                     viewPager.setCurrentItem(1);
-                if(checkedId==R.id.info)
+                }
+                if (checkedId == R.id.info) {
+                    rb1.setTextColor(Color.BLACK);
+                    rb2.setTextColor(Color.BLACK);
+                    rb3.setTextColor(Color.RED);
+                    rb4.setTextColor(Color.BLACK);
                     viewPager.setCurrentItem(2);
-                if(checkedId==R.id.my)
+                }
+                if (checkedId == R.id.my) {
+                    rb1.setTextColor(Color.BLACK);
+                    rb2.setTextColor(Color.BLACK);
+                    rb3.setTextColor(Color.BLACK);
+                    rb4.setTextColor(Color.RED);
                     viewPager.setCurrentItem(3);
+                }
              /* if( group.getCheckedRadioButtonId()==rb1.getId()){
                   viewPager.setCurrentItem(0);
               }
