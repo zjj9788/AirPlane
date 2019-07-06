@@ -6,12 +6,19 @@
 
     tools:context="com.isoft.demo.airplane.FlashActivity">
 
-<!--<pl.droidsonroids.gif.GifImageView
-    android:layout_marginLeft="0dp"
-    android:layout_marginRight="0dp"
-    android:layout_width="match_parent"
-    android:src="@mipmap/bg"
-    android:layout_height="match_parent" />-->
+<TextView
+    android:id="@+id/skip"
+    android:layout_gravity="right"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:lineSpacingExtra="3dp"
+    android:textSize="20dp"
+    android:background="#000000"
+    android:text="跳过5"
+    />
 
 
 </FrameLayout>
