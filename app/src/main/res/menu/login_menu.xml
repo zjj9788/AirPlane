@@ -1,0 +1,15 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/menu_register"
+    android:title="注册"
+    android:icon="@mipmap/logo"
+    ></item>
+    <item
+        android:id="@+id/menu_exit"
+        android:title="退出"
+        android:icon="@mipmap/logo"
+
+        ></item>
+</menu>
