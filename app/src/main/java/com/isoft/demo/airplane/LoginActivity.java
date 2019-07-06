@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("航班查询系统");
         actionBar.setSubtitle("登录");
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //   actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setBackgroundDrawable(getDrawable(R.mipmap.title_bg));

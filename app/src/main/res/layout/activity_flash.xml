@@ -16,7 +16,10 @@
     android:textColor="#FFFFFF"
     android:lineSpacingExtra="3dp"
     android:textSize="20dp"
+    android:cursorVisible="true"
+    android:pointerIcon="hand"
     android:background="#000000"
+    android:padding="20px"
     android:text="跳过5"
     />
 

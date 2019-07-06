@@ -60,6 +60,29 @@ public class MainActivity extends AppCompatActivity {
                 return 4;
             }
         });
+        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 0)
+                    rb1.setChecked(true);
+                if (position == 1)
+                    rb2.setChecked(true);
+                if (position == 2)
+                    rb3.setChecked(true);
+                if (position == 3)
+                    rb4.setChecked(true);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     @Override

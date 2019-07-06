@@ -12,10 +12,13 @@
             android:name=".FlashActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login">
+
+        </activity>
         <activity
             android:name=".GuideActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
@@ -28,6 +31,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
