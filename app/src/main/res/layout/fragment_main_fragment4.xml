@@ -2,9 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     tools:context="com.isoft.demo.airplane.MainFragment4">
 
+
+        <ListView
+            android:id="@+id/personCenter"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
 
 
 </FrameLayout>
